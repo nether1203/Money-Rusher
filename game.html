@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platform Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="score-display">
+            <span>Рахунок: </span>
+            <span id="score">0</span>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <button id="pauseButton" onclick="pauseGame()">Пауза</button>
+        <div class="pause-overlay" id="pauseOverlay">
+            <div>
+                <h2>Пауза</h2>
+                <button onclick="resumeGame()">Продовжити</button>
+                <button onclick="backToMenu()">В головне меню</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

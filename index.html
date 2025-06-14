@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platform Game - Меню</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <div class="menu-container">
+        <div class="menu-content">
+            <h1>Platform Game</h1>
+            <div class="menu-buttons">
+                <button onclick="startGame()">Почати гру</button>
+                <button onclick="toggleControls()">Керування</button>
+            </div>
+            
+            <div class="controls-section" id="controlsSection">
+                <h2>Керування:</h2>
+                <ul class="controls-list">
+                    <li>
+                        <span>← →</span>
+                        <span>Рух вліво/вправо</span>
+                    </li>
+                    <li>
+                        <span>↑</span>
+                        <span>Стрибок (2 рази)</span>
+                    </li>
+                    <li>
+                        <span>ESC</span>
+                        <span>Пауза</span>
+                    </li>
+                </ul>
+                <button class="close-button" onclick="toggleControls()">Закрити</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="menu.js"></script>
+</body>
+</html>
