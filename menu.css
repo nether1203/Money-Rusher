@@ -107,3 +107,28 @@
 body{
     background-color: #1e3c72;
 }
+
+.close-button{
+    background-color: #f44336;
+    margin-top: 20px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.close-button:hover{
+    background-color: #da190b;
+}
+
+.controls-list{
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    color: #1e3c72;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);    
+    
+
+}

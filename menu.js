@@ -1,28 +1,18 @@
-// Змінні для меню
-let isControlsOpen = false;
-const menu = document.querySelector('.menu');
-const startButton = document.getElementById('startButton');
-const controlsButton = document.getElementById('controlsButton');
-const controlsMenu = document.getElementById('controlsMenu');
-const closeControls = document.getElementById('closeControls');
+const controlsSection = document.getElementById("controlsSection");
 
-// Ініціалізація меню
-function init() {
-    // Слухачі подій для кнопок
-    startButton.addEventListener('click', startGame);
-    controlsButton.addEventListener('click', toggleControls);
-    closeControls.addEventListener('click', toggleControls);
-}
+// Спочатку ховаємо блок з керуванням
+controlsSection.style.display = "none";
 
-// Функції для кнопок
+// Функція для початку гри
 function startGame() {
-    window.location.href = 'game.html';
+    location.href = "game.html"; // Переходимо на гру
 }
 
+// Функція для показу/приховання блоку керування
 function toggleControls() {
-    isControlsOpen = !isControlsOpen;
-    controlsMenu.style.display = isControlsOpen ? 'block' : 'none';
+    if (controlsSection.style.display === "none") {
+        controlsSection.style.display = "block";
+    } else {
+        controlsSection.style.display = "none";
+    }
 }
-
-// Запуск ініціалізації після завантаження DOM
-document.addEventListener('DOMContentLoaded', init);
